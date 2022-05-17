@@ -1,0 +1,156 @@
+services.ts
+
+htttpIntercepter = httpClient.
+
+get (url+'obj',htttpIntercepter);
+
+const res$ = this.httpClient.get('/posts');
+
+res$.pipe(
+    filter(....),
+    // tap(data => console.log(data)),
+    // do(),
+    // res => res.name;
+    // log data here
+    map(....);
+);
+
+const sub1 = res$.subscribe(res => {
+    res = res.data
+}
+    error = res.error();
+);
+
+const sub2 = res$.subscribe(res => {
+    res = res.data
+}
+    error = res.error();
+);
+
+
+// const a={};
+// const b={key:'b'};
+// const c={key:'c'};
+
+// a[b]=123;
+// a[c]=456;
+
+// // a['c'] : 456, a['b'] : 123
+
+// // a[{key:'b'}] => a['[Object object]'] = 123
+// // a[{key:'c'}] => a['Object object'] = 456
+
+// // a[1] => a['1']
+
+// console.log(a[b]); // a['Object object'] // 456
+ 
+
+
+// console.log(Boolean('false')); //
+// console.log(Boolean(false));
+// console.log('3' + 1);
+// console.log('3' - 1);
+// console.log('3' - ' 02 ');
+// console.log('3' * ' 02 ');
+// console.log(Number('1'));
+// console.log(Number('number'));
+// console.log(Number(null));
+// console.log(Number(false));
+
+// true
+// false
+// 31
+// 2
+// 1
+// 6
+// 1
+// NaN
+// 0
+// 0
+
+
+// setTimeout(() => {
+// 	console.log('#1');
+// }, 10);
+
+
+// const pr2 = new Promise(res => {
+// 	console.log("Hello");
+// 	setTimeout(() => res('#2'), 10)
+// });
+
+// const pr = new Promise(res => res('#3'));
+
+// console.log('#4');
+
+// pr2.then(val => console.log(val));
+// pr.then(val => console.log(val));
+
+// console.log('end')
+
+
+// "#4"
+// "Hello"
+// "#3"
+// "end"
+// "#1"
+// "#2"
+
+// const func = () => {
+// 	 let count = 0;
+//  	 return () => {
+//   		    count++;
+//     		return count;
+//   	};
+// }
+
+// const incrementByOne = func();
+
+// const res1 = incrementByOne();
+// const res2 = incrementByOne();
+// const res3 = incrementByOne();
+
+
+// console.log({res1, res2, res3});
+
+
+
+
+// var a = 'str';
+
+// function a() {
+// 	return;
+// }
+
+// console.log(a);
+
+
+
+// // Without using .flat(), create a function to flatten an array
+ 
+// const exampleArray = [1,2,[3,4, [5,6,7], 8], 9, 10];
+// flatten(exampleArray); // [1,2,3,4,5,6,7,8,9,10]
+
+
+// const isArray = (el) => {
+//     el instanceof Array;
+// } 
+
+// function flatten(exampleArray){
+//     let result = [];
+
+//     let main = exampleArray, first;
+
+//     while(main.length > 0){
+//         first = main[0];
+
+//         if(Array.isArray(first)){
+//             Array.prototype.splice.apply(main[0,1].concat)(first);
+//         }
+//         else{
+//             result.push(first);
+//             main.splice(0,1);
+//         }###
+//     }
+//     return result;
+// }
